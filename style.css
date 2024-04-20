@@ -1,0 +1,48 @@
+.Soft-orange{
+    background-color:  hsl(5, 85%, 63%);
+}
+
+.Soft-orange-txt{
+    color:  hsl(5, 85%, 63%);
+}
+
+.Soft-red-txt{
+    color: hsl(5, 85%, 63%)
+}
+.Soft-red{
+    background-color: hsl(5, 85%, 63%)
+}
+
+
+.Off-white-txt{
+    color:  hsl(36, 100%, 99%);
+}
+
+.Off-white{
+    background-color:  hsl(36, 100%, 99%);
+}
+
+.Grayish-blue-txt{
+    color:  hsl(233, 8%, 79%);
+}
+
+
+.Grayish-blue{
+    background-color:  hsl(233, 8%, 79%);
+}
+
+.Dark-grayish-blue-txt{
+    color:  hsl(236, 13%, 42%);
+}
+
+
+
+.Dark-grayish-blue{
+    background-color:  hsl(236, 13%, 42%);
+}
+
+
+
+.Very-dark-blue{
+    background-color:  hsl(240, 100%, 5%);
+}

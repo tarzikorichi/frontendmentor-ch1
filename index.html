@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container sm:m-auto Off-white">
+    <div
+      id="menyPhone"
+      class="hidden fixed flex flex-col p-12 w-80 h-screen right-0 bg-white drop-shadow-lg"
+    >
+      <img
+        class="place-self-end"
+        id="closeMenu"
+        src="./assets/images/icon-menu-close.svg"
+        alt="open"
+        srcset=""
+      />
+      <div class="flex flex-col space-y-5 pt-32 text-xl font-semibold">
+        <a class="" href="#"> Home </a>
+        <a class="" href="#"> New </a>
+        <a class="" href="#"> Popular </a>
+        <a class="" href="#"> Trending </a>
+        <a class="" href="#"> Categories </a>
+      </div>
+    </div>
+    <nav class="flex justify-between p-5 py-6 sm:pt-10 sm:pb-4">
+      <div>
+        <img class="w-10" src="./assets/images/logo.svg" alt="logo" srcset="" />
+      </div>
+      <div class="block sm:hidden">
+        <img
+          class=""
+          id="openMenu"
+          src="./assets/images/icon-menu.svg"
+          alt="open"
+          srcset=""
+        />
+      </div>
+      <div class="flex space-x-6">
+        <a class="hover:text-orange-500" href="#"> Home </a>
+        <a class="hover:text-orange-500" href="#"> New </a>
+        <a class="hover:text-orange-500" href="#"> Popular </a>
+        <a class="hover:text-orange-500" href="#"> Trending </a>
+        <a class="hover:text-orange-500" href="#"> Categories </a>
+      </div>
+    </nav>
+    <div class="grid grid-cols-3 gap-4">
+      <!-- flex flex-col sm:flex-row -->
+      <header class="col-span-2 p-5">
+        <div>
+          <div>
+            <img
+              class="block sm:hidden pb-3"
+              src="./assets/images/image-web-3-mobile.jpg"
+              alt=""
+            />
+            <img
+              class="hidden sm:block pb-3"
+              src="./assets/images/image-web-3-desktop.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="static sm:grid sm:grid-cols-2 sm:pt-6">
+          <h2 class="text-3xl sm:text-5xl xl:text-7xl font-bold pb-3">
+            The Bright <br />
+            Future of <br class="hidden sm:block" />
+            Web 3.0?
+          </h2>
+          <div>
+            <p class="pb-3 Dark-grayish-blue-txt">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button
+              class="px-4 py-2 Soft-orange text-white tracking-widest uppercase text-base hover:Very-dark-blue"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <section class="p-5 sm:h-auto">
+        <div class="p-4 Very-dark-blue h-full Off-white-txt">
+          <div class="pb-2">
+            <h1 class="text-2xl font-bold Soft-red-txt">New</h1>
+          </div>
+          <div class="py-3">
+            <h2 class="text-base font-bold">Hydrogen VS Electric Cars</h2>
+            <p class="text-xs font-light">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <hr class="py-2" />
+          <div class="py-3">
+            <h2 class="text-base font-bold">The Downsides of AI Artistry</h2>
+            <p class="text-xs font-light">
+              What are the possible adverse effects ofon-demand AI image
+              generation?
+            </p>
+          </div>
+          <hr class="py-2" />
+          <div class="pt-3">
+            <h2 class="text-base font-bold">Is VC Funding Drying Up?</h2>
+            <p class="text-xs font-light">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what
+            </p>
+            that means.
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="p-5 flex flex-col sm:flex-row">
+      <div class="py-6 sm:p-0 flex">
+        <div class="p-2">
+          <img
+            class="w-20 h-32 object-fill"
+            src="./assets/images/image-retro-pcs.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="w-2/3 pl-3">
+          <span class="text-3xl Grayish-blue-txt">01</span>
+          <h2 class="font-bold hover:Soft-red-txt">Reviving Retro PCs</h2>
+          <p class="Grayish-blue-txt">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+
+      <div class="pb-6 sm:p-0 flex">
+        <div class="p-2">
+          <img
+            class="w-20 h-32 object-fill"
+            src="./assets/images/image-top-laptops.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="w-2/3 pl-3">
+          <span class="text-3xl Grayish-blue-txt">02</span>
+          <h2 class="font-bold hover:Soft-red-txt">Top 10 Laptops of 2022</h2>
+          <p class="Grayish-blue-txt">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </div>
+
+      <div class="pb-6 sm:p-0 flex">
+        <div class="p-2">
+          <img
+            class="w-20 h-32 object-fill"
+            src="./assets/images/image-gaming-growth.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="w-2/3 pl-3">
+          <span class="text-3xl Grayish-blue-txt">03</span>
+          <h2 class="font-bold hover:Soft-red-txt">The Growth of Gaming</h2>
+          <p class="Grayish-blue-txt">
+            How the pandemic has sparked fresh opportunities
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
+
+<!-- Home
+<img
+            class="object-cover"
+            src="./assets/images/image-retro-pcs.jpg"
+            alt=""
+            srcset=""
+          />
+
+
+   <img
+            class="object-cover"
+            src="./assets/images/image-top-laptops.jpg"
+            alt=""
+            srcset=""
+          />
+
+          
+   <img
+            class="object-fill"
+            src="./assets/images/image-gaming-growth.jpg"
+            alt=""
+            srcset=""
+          />
+New
+Popular
+Trending
+Categories
+
+The Bright Future of Web 3.0?
+
+We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+But is it really fulfilling its promise?
+
+Read more
+
+New 
+
+Hydrogen VS Electric Cars
+Will hydrogen-fueled cars ever catch up to EVs?
+
+The Downsides of AI Artistry
+What are the possible adverse effects of on-demand AI image generation?
+
+Is VC Funding Drying Up?
+Private funding by VC firms is down 50% YOY. We take a look at what that means.
+
+01
+Reviving Retro PCs
+What happens when old PCs are given modern upgrades?
+
+02
+Top 10 Laptops of 2022
+Our best picks for various needs and budgets.
+
+03
+The Growth of Gaming
+How the pandemic has sparked fresh opportunities. -->
